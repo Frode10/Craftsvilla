@@ -5,22 +5,27 @@
 }
 
 :root {
-    /* BG COLOR BODY */
-    --bg-body:rgb(105, 79, 255); /* var(--bg-body); */
+/* NØYTRAL OG DEMPET PALETT */
 
-    --bg-heading-section:red; /* var(--bg-heading-section); */
-    /* SECTIONS BG COLOR */
-    --bg-section-presentasjon:#5d9eff; /* var(--bg-section-presentasjon) */
-    --bg-section-argumenter:rgb(41, 255, 105); /* var(--bg-section-argumenter) */
-    --bg-section-kurstilbud:rgb(255, 219, 56); /* var(--bg-section-kurstilbud) */
-    --bg-section-footer:#5d9eff; /* var(--bg-section-footer) */
+/* BG COLOR BODY */
+--bg-body: #5E5C6C; /* Dempet blågrå – rolig og behagelig */
 
-    /* CARDS BG COLOR */
-    --bg-cards-craftsville:#e4e4e4; /* var(--bg-cards-craftsville) */
-    --bg-cards-argumenter:rgb(233, 233, 233); /* var(--bg-cards-craftsville) */
-    --bg-cards-kurstilbud:rgb(216, 216, 216); /* var(--bg-cards-craftsville) */
-    --bg-cards-footer:#e4e4e4;; /* var(--bg-cards-craftsville) */
+/* HEADINGS OG SEKSJONER */
+--bg-heading-section:  #FF8800; /* Mørk lavendel – kunstnerisk og sofistikert */
+--bg-section-presentasjon: #6D6875; /* Mørk lavendel */
+--bg-section-argumenter: #6D6875; /* Mørk lavendel */
+--bg-section-kurstilbud: #6D6875; /* Mørk lavendel */
+--bg-section-footer: #6D6875; /* Mørk lavendel */
 
+/* BUTTONS */
+--bg-button: #7A9E9F; /* Dyp sjøgrønn – fremhever handlingselementer */
+
+/* CARDS BG COLOR */
+--bg-cards-craftsville: #6D6875; /* Mørk lavendel */
+--bg-cards-argumenter: #6D6875; /* Mørk lavendel */
+--bg-cards-kurstilbud: #847e8f; /* Mørk lavendel */
+--bg-cards-footer: #6D6875; /* Mørk lavendel */
+--bg-card-text-wrapper:#FF8800; 
 
 }
 
@@ -102,8 +107,17 @@ section, footer {
 /* CARDS */
 /* velger alle som begynner med cards- */
 [class^="cards-"] {
-    border-radius: 8px;
-    padding: 1rem;
+    border-radius: 0px;
+    padding: 0rem;
+}
+
+.card-text-wrapper {
+    display: flex;
+    flex:1; /* regulerer høyde etter box med mest innhold flex-grow */
+    flex-direction: column;
+    justify-content: space-between;
+    padding:1rem;
+    background-color: var(--bg-card-text-wrapper);
 }
 
 /* cards satt til flex-start for blocks etterhverande */
@@ -118,8 +132,6 @@ section, footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding:1rem;
-    min-height: 600px;
 }
 
 .cards-craftsville {
@@ -149,7 +161,6 @@ section, footer {
     width: 100%;
     height: 300px;
     overflow: hidden;
-    margin-bottom: 1rem;
 }
 
 .image-wrapper img {
@@ -166,7 +177,7 @@ button {
     padding:1rem 2rem;
     border-radius: 8px;
     color:whitesmoke;
-    background-color: #00A550;
+    background-color: var(--bg-button);
     border:0;
 }
 
