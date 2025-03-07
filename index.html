@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontsize.css">
+    <script src="./script.js" defer></script>
 
     <title>Document</title>
 </head>
@@ -16,8 +17,11 @@
         <nav>
             <ul>
                 <li><a href="#">Hjem</a></li>
-                <li><a href="#">Om oss</a></li>
+                <li><a href="#">Meld på kurs</a></li>
                 <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Om oss</a></li>
+
+
             </ul>
         </nav>
     </header>
@@ -35,8 +39,92 @@
             </div>
 
             <div class="cards-craftsville">
-                <h3>Meld deg på kurs</h3>
-                <p>Kontakt og bestillinsskjma</p>
+                
+                <!-- START KONTAKTSKJEMA -->
+
+                <form id="signupForm">
+                    <h5>Påmeldingsskjema</h5>
+                
+                    <div class="form-group">
+                        <input type="radio" id="privatperson" name="userType" value="privatperson"> 
+                        <label for="privatperson" class="radio-label">Privatperson</label>
+                        <input type="radio" id="firma" name="userType" value="firma" checked> 
+                        <label for="firma" class="radio-label">Firma</label>
+                    </div>
+                
+                    <!-- Privatperson Fields -->
+                    <div id="privatpersonFields">
+                        <div class="form-group">
+                            <select id="activity" name="activity" required>
+                                <option value="" disabled selected>Velg aktivitet</option>
+                                <option value="mosaikk">Mosaikk Kunst - 400 kr</option>
+                                <option value="akvarell">Akvarellmaling - 200 kr</option>
+                                <option value="lerretsmaling">Lerretsmaling - 300 kr</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="E-postadresse" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="fornavn" name="fornavn" placeholder="Fornavn" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="etternavn" name="etternavn" placeholder="Etternavn" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="adresse" name="adresse" placeholder="Adresse" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="sted" name="sted" placeholder="Sted" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="mobil" name="mobil" placeholder="Mobilnummer" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="barn" name="barn" placeholder="Antall barn (over 8 år)" required>
+                        </div>
+                        <div class="form-group comment-field">
+                            <textarea id="comment" name="comment" placeholder="Kommentar" rows="4"></textarea>
+                        </div>
+                    </div>
+                
+                    <!-- Firma Fields -->
+                    <div id="firmaFields" class="hidden">
+                        <div class="form-group">
+                            <select id="activityFirma" name="activityFirma" required>
+                                <option value="" disabled selected>Velg aktivitet</option>
+                                <option value="mosaikk">Mosaikk Kunst - 400 kr</option>
+                                <option value="akvarell">Akvarellmaling - 200 kr</option>
+                                <option value="lerretsmaling">Lerretsmaling - 300 kr</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="firmaEmail" name="firmaEmail" placeholder="E-postadresse" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="firmanavn" name="firmanavn" placeholder="Firmanavn" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="kontaktperson" name="kontaktperson" placeholder="Kontaktperson" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="tlfKontakt" name="tlfKontakt" placeholder="Mobil kontaktperson" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="antallDeltagere" name="antallDeltagere" placeholder="Antall deltagere" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="dato" name="dato" required>
+                        </div>
+                    </div>
+                
+                    <button type="submit">Send forespørsel</button>
+                </form>
+            
+                
+                
+
+                <!-- END kontaktskjema -->
             </div>
 
             <div class="cards-craftsville">
@@ -56,7 +144,7 @@
                 <h3>Mosaikk Kunst - 400 kr</h3>
                 <p>Sett inkluderer: Ramme, A4 størrelse treplate, små fargede steiner, gummi.
                 </p>
-                <button>Book kurs</button>
+                <button>Meld på kurs</button>
             </div>
             </div>
 
@@ -66,7 +154,7 @@
 
                 <h3>Akvarellmaling - 200 kr</h3>
                 <p>Sett inkluderer: Ramme, akvarellpapir med designmal, akvarellfarger, pensler.</p>
-                <button>Book kurs</button>
+                <button>Meld på kurs</button>
             </div>
             </div>
 
@@ -76,7 +164,7 @@
 
                 <h3>Lerretsmaling - 300 kr</h3>
                 <p>Sett inkluderer: Ramme, akrylpapir med designmal, akrylfarger, pensler.</p>
-                <button>Book kurs</button>
+                <button>Meld på kurs</button>
                 </div>
             </div>
         </section>
@@ -111,7 +199,7 @@
         <p>
             <b>Gir selvtillit og mestringsfølelse:</b> Å skape noe gir en følelse av prestasjon og stolthet. Du lærer å
             akseptere feil som en del av læringsprosessen.</p>
-        <button>Les mer..</button>
+        <button>Meld på kurs</button>
         </div>
     </div>
 
@@ -130,7 +218,7 @@
             <b>Bygger nettverk og fellesskap:</b> Du møter likesinnede mennesker med samme interesser. Mulighet for
             samarbeid og inspirasjon fra andre deltakere.
         </p>
-        <button>Les mer..</button>
+        <button>Meld på kurs</button>
         </div>
     </div>
 
@@ -148,7 +236,7 @@
             løsninger. Kreative kurs kan bidra til bedre ideer og mer engasjerte medarbeidere.
 
         </p>
-        <button>Les mer..</button>
+        <button>Meld på kurs</button>
     </div>
     </div>
 </section>

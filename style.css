@@ -11,7 +11,7 @@
 --bg-body: #5E5C6C; /* Dempet blågrå – rolig og behagelig */
 
 /* HEADINGS OG SEKSJONER */
---bg-heading-section:  #FF8800; /* Mørk lavendel – kunstnerisk og sofistikert */
+--bg-heading-section:  #7b9f7a; /* Mørk lavendel – kunstnerisk og sofistikert */
 --bg-section-presentasjon: #6D6875; /* Mørk lavendel */
 --bg-section-argumenter: #6D6875; /* Mørk lavendel */
 --bg-section-kurstilbud: #6D6875; /* Mørk lavendel */
@@ -25,7 +25,7 @@
 --bg-cards-argumenter: #6D6875; /* Mørk lavendel */
 --bg-cards-kurstilbud: #847e8f; /* Mørk lavendel */
 --bg-cards-footer: #6D6875; /* Mørk lavendel */
---bg-card-text-wrapper:#FF8800; 
+--bg-card-text-wrapper:#ff8800a9;
 
 }
 
@@ -46,8 +46,8 @@ body {
 header {
     display:flex;
     justify-content: space-between;
-    background-color: lightgrey;
     padding:1rem;
+    background-color:  #7A9E9F;
 
 }
 
@@ -56,7 +56,6 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: aqua;
 }
 
 ul {
@@ -68,12 +67,113 @@ ul {
 }
 
 li {
-    background-color: coral;
 }
 
 main {
-    background-color: white;
+    background-color: transparent;
 }
+
+
+/* FORM STYLING */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.212);
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#privatpersonFields, #firmaFields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+h5 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.radio-label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+input[type="tel"], 
+input[type="date"],
+select, 
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid lavender;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.212);
+}
+
+/* placeholder tekst color */
+input::placeholder, textarea::placeholder {;
+    color: black;
+}
+
+
+
+
+
+
+
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.comment-field {
+    grid-column: span 2;
+}
+
+.hidden {
+    display: none !important;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsivt design for mindre skjermer */
+@media (max-width: 576px) {
+    #privatpersonFields, #firmaFields {
+        grid-template-columns: 1fr;
+    }
+    
+    .comment-field {
+        grid-column: 1;
+    }
+}
+
+
+/* END FORM STYLING */
+
+
+
 
 /* SECTIONS */
 

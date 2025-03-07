@@ -18,7 +18,7 @@ h3 {
 
 h4 {
     font-size: 1.728rem;
-    background-color: #FF8800;
+    background-color: var(--bg-heading-section);
   padding:2rem;
     color:whitesmoke;
     text-align: center;
