@@ -1,0 +1,206 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* BG COLOR BODY */
+    --bg-body:rgb(105, 79, 255); /* var(--bg-body); */
+
+    --bg-heading-section:red; /* var(--bg-heading-section); */
+    /* SECTIONS BG COLOR */
+    --bg-section-presentasjon:#5d9eff; /* var(--bg-section-presentasjon) */
+    --bg-section-argumenter:rgb(41, 255, 105); /* var(--bg-section-argumenter) */
+    --bg-section-kurstilbud:rgb(255, 219, 56); /* var(--bg-section-kurstilbud) */
+    --bg-section-footer:#5d9eff; /* var(--bg-section-footer) */
+
+    /* CARDS BG COLOR */
+    --bg-cards-craftsville:#e4e4e4; /* var(--bg-cards-craftsville) */
+    --bg-cards-argumenter:rgb(233, 233, 233); /* var(--bg-cards-craftsville) */
+    --bg-cards-kurstilbud:rgb(216, 216, 216); /* var(--bg-cards-craftsville) */
+    --bg-cards-footer:#e4e4e4;; /* var(--bg-cards-craftsville) */
+
+
+}
+
+html{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    max-width: 1280px;
+    background-color: var(--bg-body);
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    background-color: lightgrey;
+    padding:1rem;
+
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
+}
+
+ul {
+    display:flex;
+    gap:1rem;
+   
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+li {
+    background-color: coral;
+}
+
+main {
+    background-color: white;
+}
+
+/* SECTIONS */
+
+section, footer {
+    display: flex;
+    gap:1rem;
+   
+    padding:1rem;
+}
+
+/* SECTIONS */
+
+.section-presentasjon {
+    background-color: var(--bg-section-presentasjon);
+}
+
+.section-argumenter {
+    
+    background-color: var(--bg-section-argumenter);
+}
+
+.section-kurstilbud {
+  
+    background-color: var(--bg-section-kurstilbud);
+}
+
+.section-footer {
+    background-color: var(--bg-section-footer);
+}
+
+/* CARDS */
+/* velger alle som begynner med cards- */
+[class^="cards-"] {
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* cards satt til flex-start for blocks etterhverande */
+.cards-craftsville, .cards-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* cards satt til space-between for pushe button to bottom */
+.cards-argumenter, .cards-kurstilbud {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:1rem;
+    min-height: 600px;
+}
+
+.cards-craftsville {
+    width:33%;
+    background-color: var(--bg-cards-craftsville);
+}
+
+.cards-argumenter {
+    width:33%;
+    background-color: var(--bg-cards-argumenter) ;
+    
+}
+
+.cards-kurstilbud {
+    width:33%;
+    background-color: var(--bg-cards-kurstilbud) ;
+}
+
+.cards-footer {
+    width: 33%;
+    background-color: var(--bg-cards-footer) ;
+}
+
+/* BILDER CARDS */
+
+.image-wrapper {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center center; /* Sentrerer bildet */
+}
+
+/* BUTTONS les mer.. */
+button {
+    margin-top: auto;
+    width: fit-content;
+    padding:1rem 2rem;
+    border-radius: 8px;
+    color:whitesmoke;
+    background-color: #00A550;
+    border:0;
+}
+
+button:hover {
+    background-color: #66a500;
+}
+
+
+@media (max-width: 992px) {
+    section, footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Fordeler elementene jevnt */
+    }
+
+    /* Velger alle klasser som starter med "cards-" */
+    [class^="cards-"] {
+        width: calc(50% - 10px); /* To kolonner med mellomrom */
+        min-width: 200px;
+        box-sizing: border-box; /* Hindrer at padding øker bredden */
+    }
+}
+
+
+
+@media (max-width:768px) {
+    section, footer {
+        display:flex;
+        flex-wrap: wrap;
+        width: 100%;
+        min-width: 300px;
+    }
+    /*velger alle som begynner med cards */
+    [class^="cards-"] {
+        width: 100%;
+    }
+}

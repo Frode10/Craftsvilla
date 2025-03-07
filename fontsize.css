@@ -1,0 +1,40 @@
+/* Scale 1.2 minor-third */
+
+h1 {
+    font-size: 2.986rem;
+}
+
+h2 {
+    font-size: 2.488rem;
+    background-color: var(--bg-heading-section);
+    padding:2rem;
+    color:whitesmoke;
+}
+
+h3 {
+    font-size: 2.074rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.728rem;
+    background-color: #FF8800;
+  padding:2rem;
+    color:whitesmoke;
+    text-align: center;
+    line-height: 1.6;
+}
+
+h5 {
+    font-size: 1.44rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
