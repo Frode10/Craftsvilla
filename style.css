@@ -210,7 +210,7 @@ section, footer {
 [class^="cards-"] {
 
     border-radius: 0px;
-    padding: 1rem;
+    padding-bottom: 1rem;
 }
 
 .card-text-wrapper {
