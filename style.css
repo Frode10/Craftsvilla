@@ -248,6 +248,12 @@ section, footer {
     background-color: var(--bg-cards-craftsville);
 }
 
+/* CARD-4 ER SKJULT - VISES KUN UNDER 992px - se media 992px */
+
+.cards-4 {
+    display:none;
+}
+
 .cards-argumenter {
     width:33%;
     background-color: var(--bg-cards-argumenter) ;
@@ -308,6 +314,10 @@ button:hover {
         min-width: 200px;
         box-sizing: border-box; /* Hindrer at padding øker bredden */
     }
+
+    .cards-4 {
+        display:block;
+    }
 }
 
 
@@ -327,5 +337,9 @@ button:hover {
     /*velger alle som begynner med cards */
     [class^="cards-"] {
         width: 100%;
+    }
+
+    .cards-4 {
+        display:none;
     }
 }
