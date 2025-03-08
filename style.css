@@ -7,14 +7,14 @@
 :root {
 /* NØYTRAL OG DEMPET PALETT */
 
---bg-header:#2098cd;
+--bg-header:#264e60;
 
 /* BG COLOR BODY */
 --bg-body: #172c36; /* Dempet blågrå – rolig og behagelig */
 
 /* HEADINGS OG SEKSJONER */
 --bg-heading-section:  #264e60; /* Mørk lavendel – kunstnerisk og sofistikert */
---bg-section-presentasjon: #2098cd; /* Mørk lavendel */
+--bg-section-presentasjon: #264e60; /* Mørk lavendel */
 --bg-section-argumenter: #2098cd; /* Mørk lavendel */
 --bg-section-kurstilbud: #f0a417; /* Mørk lavendel */
 --bg-section-footer: #2098cd; /* Mørk lavendel */
@@ -56,20 +56,35 @@ header {
 
 nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Endre til row for horisontal meny */
     justify-content: center;
+    align-items: center; /* Sentrerer elementene horisontalt */
+    padding: 1rem 0;
 }
 
 ul {
-    display:flex;
-    gap:1rem;
-   
-    list-style-type: none;
+    display: flex;
+    gap: 1rem;
     font-size: 1rem;
+    list-style-type: none; /* Fjern punktmerkene */
+    padding: 0;
+    margin: 0;
 }
 
-li {
+ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
 }
+
+ul li a:hover {
+    color: #ffcc00; /* Valgfri hover-effekt */
+}
+
+
+
 /* Atelier image hero image */
 .hero-image {
     width:100%;
