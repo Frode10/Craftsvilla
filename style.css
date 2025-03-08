@@ -78,9 +78,10 @@ main {
 form {
     width: 100%;
     max-width: 600px;
+    height: 100%;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.212);
-    padding: 20px;
+    padding: 1rem;
     border-radius: 4px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -228,8 +229,9 @@ section, footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
+    
 
+}
 /* cards satt til space-between for pushe button to bottom */
 .cards-argumenter, .cards-kurstilbud {
     display: flex;
