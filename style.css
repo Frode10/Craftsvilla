@@ -306,6 +306,11 @@ button:hover {
 
 
 @media (max-width:768px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
     section, footer {
         display:flex;
         flex-wrap: wrap;
