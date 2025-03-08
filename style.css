@@ -43,7 +43,7 @@ html{
 }
 
 body {
-    
+    font-family: "Poppins", serif;
     max-width: 1280px;
     background-color: var(--bg-body);
 }
@@ -191,11 +191,6 @@ input::placeholder, textarea::placeholder {
 
 
 
-
-
-
-
-
 .form-group {
     margin-bottom: 10px;
 }
@@ -288,6 +283,8 @@ section, footer {
     justify-content: space-between;
     padding:1rem;
     background-color: var(--bg-card-text-wrapper);
+    border-radius: 8px;
+
 }
 
 /* cards satt til flex-start for blocks etterhverande */
@@ -295,6 +292,7 @@ section, footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    border-radius: 8px;
     
 
 }
