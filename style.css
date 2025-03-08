@@ -118,7 +118,7 @@ textarea {
 }
 
 /* placeholder tekst color */
-input::placeholder, textarea::placeholder {;
+input::placeholder, textarea::placeholder {
     color: black;
 }
 
@@ -206,9 +206,11 @@ section, footer {
 
 /* CARDS */
 /* velger alle som begynner med cards- */
+
 [class^="cards-"] {
+
     border-radius: 0px;
-    padding: 0rem;
+    padding: 1rem;
 }
 
 .card-text-wrapper {
