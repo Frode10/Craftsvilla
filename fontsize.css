@@ -1,7 +1,7 @@
 /* Scale 1.2 minor-third */
-
+/* 2.986rem */
 h1 {
-    font-size: 2.986rem;
+    font-size: clamp(1.5rem, 25vw, 2.5rem);
     color:whitesmoke;
 }
 
