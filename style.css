@@ -44,7 +44,6 @@ html{
 
 body {
     font-family: "Poppins", serif;
-    max-width: 1280px;
     background-color: var(--bg-body);
 }
 
@@ -220,7 +219,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Responsivt design for mindre skjermer */
+/* Responsivt form */
 @media (max-width: 576px) {
     #privatpersonFields, #firmaFields {
         grid-template-columns: 1fr;
@@ -323,6 +322,13 @@ section, footer {
 .cards-kurstilbud {
     width:33%;
     background-color: var(--bg-cards-kurstilbud) ;
+}
+/* verktøy, kurstider, sesongkort osv... i kursbox info */
+.kurs-info {
+    padding:1rem;
+    background-color: #d6d6d6;
+    border-radius: 4px;
+    color:rgb(66, 66, 66);
 }
 
 .cards-footer {
@@ -431,12 +437,13 @@ button:hover {
         width: 100%;
     }
 
-    .cards-4 {
-        display:block;
-    }
 }
 
 @media (max-width:500px) {
+    .hero-image {
+        height:300px;
+    }
+
     nav {
         display: flex;
         flex-direction: column;
@@ -465,6 +472,10 @@ button:hover {
         text-transform: uppercase;
         letter-spacing: 1px;
         transition: color 0.3s ease-in-out;
+    }
+
+    .cards-4 {
+        display:none;
     }
 
 }
