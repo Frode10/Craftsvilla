@@ -8,24 +8,24 @@
 /* NØYTRAL OG DEMPET PALETT */
 
 /* BG COLOR BODY */
---bg-body: #5E5C6C; /* Dempet blågrå – rolig og behagelig */
+--bg-body: #2098cd; /* Dempet blågrå – rolig og behagelig */
 
 /* HEADINGS OG SEKSJONER */
---bg-heading-section:  #7b9f7a; /* Mørk lavendel – kunstnerisk og sofistikert */
---bg-section-presentasjon: #6D6875; /* Mørk lavendel */
---bg-section-argumenter: #6D6875; /* Mørk lavendel */
---bg-section-kurstilbud: #6D6875; /* Mørk lavendel */
---bg-section-footer: #6D6875; /* Mørk lavendel */
+--bg-heading-section:  #264e60; /* Mørk lavendel – kunstnerisk og sofistikert */
+--bg-section-presentasjon: #f0a417; /* Mørk lavendel */
+--bg-section-argumenter: #f0a417; /* Mørk lavendel */
+--bg-section-kurstilbud: #f0a417; /* Mørk lavendel */
+--bg-section-footer: #2098cd; /* Mørk lavendel */
 
 /* BUTTONS */
 --bg-button: #7A9E9F; /* Dyp sjøgrønn – fremhever handlingselementer */
 
 /* CARDS BG COLOR */
---bg-cards-craftsville: #6D6875; /* Mørk lavendel */
---bg-cards-argumenter: #6D6875; /* Mørk lavendel */
---bg-cards-kurstilbud: #847e8f; /* Mørk lavendel */
---bg-cards-footer: #6D6875; /* Mørk lavendel */
---bg-card-text-wrapper:#ff8800a9;
+--bg-cards-craftsville: #dabdb0; /* Mørk lavendel */
+--bg-cards-argumenter: #dabdb0; /* Mørk lavendel */
+--bg-cards-kurstilbud: #dabdb0; /* Mørk lavendel */
+--bg-cards-footer: #dabdb0; /* Mørk lavendel */
+--bg-card-text-wrapper:#dabdb0;
 
 }
 
@@ -340,6 +340,6 @@ button:hover {
     }
 
     .cards-4 {
-        display:none;
+        display:block;
     }
 }
