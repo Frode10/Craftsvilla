@@ -287,6 +287,8 @@ section, footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    border: 16px solid rgb(36, 36, 36);
+
     
 
 }
