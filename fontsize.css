@@ -8,9 +8,10 @@ h1 {
 /* 2.488rem */
 h2 {
     font-size: 2.3rem;
+    font-weight: 500;
     background-color: var(--bg-heading-section);
     padding:2rem;
-    color:whitesmoke;
+    color:#f0a417;
 }
 /* 2.074rem */
 h3 {
@@ -22,10 +23,10 @@ h4 {
     font-size: 1.4rem;
     background-color: var(--bg-heading-section);
   padding:2rem;
-    color:whitesmoke;
+    color:#f0a417;
     text-align: center;
     line-height: 1.6;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 h5 {
