@@ -17,14 +17,15 @@ h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
-
+/* 1.728rem; */
 h4 {
-    font-size: 1.728rem;
+    font-size: 1.4rem;
     background-color: var(--bg-heading-section);
   padding:2rem;
     color:whitesmoke;
     text-align: center;
     line-height: 1.6;
+    font-weight: 300;
 }
 
 h5 {
