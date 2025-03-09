@@ -339,7 +339,7 @@ section, footer {
     height: 300px;
     overflow: hidden;
     border:12px solid rgb(46, 46, 46);
-    padding:8px;
+    padding:16px;
     background-color: whitesmoke;
 }
 
