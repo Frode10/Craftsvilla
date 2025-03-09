@@ -494,4 +494,8 @@ button:hover {
         display:none;
     }
 
+    .signupForm {
+        display:none;
+    }
+
 }
