@@ -287,11 +287,8 @@ section, footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
-
-    
-
 }
+
 /* cards satt til space-between for pushe button to bottom */
 .cards-argumenter, .cards-kurstilbud {
     display: flex;
@@ -369,6 +366,17 @@ button:hover {
 }
 
 /* CARDS - INNHOLD - bg farge li se li:nth-child */
+/* Craftsville presentasjon heading Skap, lær ... */
+.h4-overskrift {
+    padding:0.5rem 0 0.5rem 0;
+    background-color: #f0a417;
+    color:#172c36;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 2.3rem;
+    line-height: 1.2;
+}
+
 .argument-liste {
     display: flex;
     gap:0.3rem;
