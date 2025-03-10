@@ -281,17 +281,27 @@ section, footer {
     background-color: var(--bg-section-footer);
 }
 
-.hvorfor-kurs {
+
+
+.h4-hvorfor-kurs {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
     width:100%;
-    background-color: #1d4355;
-    height: 200px;;
+    background-color: #1d4355;    
+   
+}
+
+.h4-hvorfor-kurs h4 {
+    width:100%;
+    max-width: 600px;
+    
+   
 }
 
 .kurstilbud-h2 {
     color:#f0a417;
+    background-color: #1d4355;
 }
 
 /* CARDS */

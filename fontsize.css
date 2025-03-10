@@ -22,13 +22,12 @@ h3 {
 /* 1.728rem; */
 h4 {
     font-size: 1.4rem;
-    padding:4rem 0rem 2rem 2rem;
+    padding:4rem 4rem 4rem 4rem;
     color:#f0a417;
     text-align: center;
     line-height: 1.6;
     font-weight: 400;
-    width:100%;
-    max-width:600px;
+    
     
 }
 
