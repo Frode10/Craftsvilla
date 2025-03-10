@@ -10,14 +10,14 @@
 --bg-header:#264e60;
 
 /* BG COLOR BODY */
---bg-body: #172c36; /* Dempet blågrå – rolig og behagelig */
+--bg-body: #172c36; 
 
 /* HEADINGS OG SEKSJONER */
---bg-heading-section:  #264e60; /* Mørk lavendel – kunstnerisk og sofistikert */
---bg-section-presentasjon: #264e60; /* Mørk lavendel */
---bg-section-argumenter: #2098cd; /* Mørk lavendel */
---bg-section-kurstilbud: #f0a417; /* Mørk lavendel */
---bg-section-footer: #2098cd; /* Mørk lavendel */
+--bg-heading-section:  transparent;  /* h2 #264e60 */
+--bg-section-presentasjon: transparent; 
+--bg-section-argumenter: #2098cd; 
+--bg-section-kurstilbud: #f0a417; 
+--bg-section-footer: #2098cd; 
 
 /* BUTTONS */
 --bg-button: #19a111; /* Dyp sjøgrønn – fremhever handlingselementer */
@@ -26,10 +26,10 @@
 --bg-card-text-wrapper:rgb(223, 223, 223);
 
 /* CARDS BG COLOR */
---bg-cards-craftsville: #dabdb0; /* Mørk lavendel */
---bg-cards-argumenter: #dabdb0; /* Mørk lavendel */
---bg-cards-kurstilbud: transparent; /* Mørk lavendel */
---bg-cards-footer: #dabdb0; /* Mørk lavendel */
+--bg-cards-craftsvilla: #dabdb0; 
+--bg-cards-argumenter: transparent; 
+--bg-cards-kurstilbud: transparent; 
+--bg-cards-footer: #dabdb0; 
 
 
 }
@@ -247,7 +247,9 @@ section, footer {
 
 .section-presentasjon {
     background-color: var(--bg-section-presentasjon);
-    padding:1rem;
+    padding-top:7rem;
+    padding-bottom: 7rem;
+
 }
 
 .section-argumenter {
@@ -269,10 +271,10 @@ section, footer {
 
 [class^="cards-"] {
 
-    border-radius: 0px;
+    border-radius: 8px;
 }
 
-.card-text-wrapper {
+.cards-text-wrapper {
     display: flex;
     flex:1; /* regulerer høyde etter box med mest innhold flex-grow */
     flex-direction: column;
@@ -280,10 +282,11 @@ section, footer {
     padding:1rem;
     background-color: var(--bg-card-text-wrapper);
 
+
 }
 
 /* cards satt til flex-start for blocks etterhverande */
-.cards-craftsville, .cards-footer {
+.cards-craftsvilla, .cards-footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -296,9 +299,9 @@ section, footer {
     justify-content: space-between;
 }
 
-.cards-craftsville {
+.cards-craftsvilla {
     width:33%;
-    background-color: var(--bg-cards-craftsville);
+    background-color: var(--bg-cards-craftsvilla);
 }
 
 /* CARD-4 ER SKJULT - VISES KUN UNDER 992px - se media 992px */
@@ -334,7 +337,12 @@ section, footer {
     border: 12px solid rgb(46, 46, 46);
     padding: 16px;
     background-color: whitesmoke;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+/* Kun .card-argumenter image-wrapper  */
+.cards-argumenter .image-wrapper {
+    margin-bottom: 1rem;
+    border-radius: 8px;
 }
 
 /* Generell styling */
@@ -367,20 +375,19 @@ button:hover {
 }
 
 /* CARDS - INNHOLD - bg farge li se li:nth-child */
-/* Craftsville presentasjon heading Skap, lær ... */
+/* craftsvilla presentasjon heading Skap, lær ... */
 .h4-overskrift {
-    padding:0.5rem 0 0.5rem 0;
-    background-color: #f0a417;
-    color:#172c36;
-    margin-bottom: 1rem;
+    padding:2rem 0 2rem 0;
+    background-color: transparent;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.2;
+    color:#264e60;
 }
 
 .argument-liste {
     display: flex;
-    gap:0.3rem;
+    gap:1rem;
     flex-direction: column;
     color: whitesmoke;
     font-weight: 400;
@@ -388,11 +395,14 @@ button:hover {
 }
 
 .argument-liste li {
-    background-color: #19a111;
+    background-color: #f0a417;
     list-style-type: none; /* Standard bullet points */
     list-style-position: inside; /* Plasser bullet points innenfor li */
     padding-left: 1rem; /* Juster litt for lesbarhet */
     padding: 1rem 1rem;
+    border-radius: 6px;
+    text-align: center;
+
 }
 
 /*  --------------- MEDIA QUERIES -------------  */
