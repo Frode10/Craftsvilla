@@ -53,8 +53,8 @@ header {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding:1rem;
     background-color: var(--bg-header);
+    padding:1rem 0 1rem 0;
 
 }
 
@@ -131,7 +131,6 @@ ul li a:hover {
 
 .logo {
     font-size:1.5rem;
-    margin-left: 2rem;
     color:whitesmoke;
 }
 .h2-kreativ-utvikling {
