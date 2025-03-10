@@ -141,6 +141,7 @@ font-weight: 700;
     text-transform: uppercase;
     font-family: "Poppins";
     background-color: #1d4355;
+    color:#f0a417;
 
 }
 main {
@@ -278,6 +279,19 @@ section, footer {
 
 .section-footer {
     background-color: var(--bg-section-footer);
+}
+
+.hvorfor-kurs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    background-color: #1d4355;
+    height: 200px;;
+}
+
+.kurstilbud-h2 {
+    color:#f0a417;
 }
 
 /* CARDS */
