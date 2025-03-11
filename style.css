@@ -253,11 +253,18 @@ button:hover {
 section, footer {
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
-    gap:0.5rem;
-    padding:1rem;
-   background-color: red;
-    
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
+   justify-content: space-between;
+
+}
+
+/* Setter FLEX Kolonner til 3 kolonner. under 992px - 2 kolonner*/
+.cards-craftsvilla, 
+.cards-argumenter, 
+.cards-kurstilbud {
+    width: calc(33.33% - 0.5rem); /* Account for the gap */
 }
 
 /* SECTIONS */
@@ -351,13 +358,12 @@ section, footer {
 }
 
 .cards-argumenter {
-    width:33%;
+   
     background-color: var(--bg-cards-argumenter) ;
     
 }
 
 .cards-kurstilbud {
-    width:33%;
     background-color: var(--bg-cards-kurstilbud) ;
 }
 /* verktøy, kurstider, sesongkort osv... i kursbox info */
@@ -371,7 +377,7 @@ section, footer {
 }
 
 .cards-footer {
-    width: 33%;
+   
     background-color: var(--bg-cards-footer) ;
 }
 
@@ -430,7 +436,7 @@ button:hover {
 
 .argument-liste {
     display: flex;
-    gap:1rem;
+    gap:0.5rem;
     flex-direction: column;
     color: #264e60;
     font-size: 1.1rem;
@@ -461,6 +467,15 @@ button:hover {
 }
 
 @media (max-width: 992px) {
+ /* FLex kolonner til 2 kolonner -*/   
+    .cards-craftsvilla, 
+    .cards-argumenter, 
+    .cards-kurstilbud, 
+    .cards-4 {
+    width: calc(50% - 0.5rem); /* Account for the gap */
+}
+    
+    
     section, footer {
         display: flex;
         flex-wrap: wrap;
@@ -468,11 +483,6 @@ button:hover {
     }
 
     /* Velger alle klasser som starter med "cards-" */
-    [class^="cards-"] {
-        width: 28%;
-        min-width: 300px;
-        box-sizing: border-box; /* Hindrer at padding øker bredden */
-    }
 
     .cards-4 {
         display:block;
