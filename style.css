@@ -58,6 +58,7 @@ header {
     padding:1rem 1rem 1rem 1rem;
     position:sticky;
     top:0;
+    border-bottom: 1px #ffcc0042 solid;
 
 }
 
