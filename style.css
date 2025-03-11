@@ -504,6 +504,10 @@ button:hover {
 
 @media (max-width:767px) {
 
+    header{
+        position: static;
+    }
+
     nav {
         display: flex;
         flex-direction: column; /* Endre til row for horisontal meny */
@@ -550,7 +554,7 @@ button:hover {
 @media (max-width:500px) {
 
     header{
-        position: none;
+        position: static;
     }
     .hero-image {
         height:300px;
