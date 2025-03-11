@@ -252,7 +252,7 @@ button:hover {
 
 section, footer {
     display: flex;
-    flex-direction: row;
+   
     flex-wrap: wrap;
     gap: 0.5rem;
     padding: 1rem;
@@ -347,7 +347,7 @@ section, footer {
 }
 
 .cards-craftsvilla {
-    width:32%;
+    
     background-color: var(--bg-cards-craftsvilla);
 }
 
