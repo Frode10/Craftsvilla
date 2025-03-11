@@ -252,7 +252,9 @@ button:hover {
 
 section, footer {
     display: flex;
-    gap:1rem;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap:0.5rem;
     padding:1rem;
    background-color: red;
     
@@ -338,7 +340,7 @@ section, footer {
 }
 
 .cards-craftsvilla {
-    width:33%;
+    width:32%;
     background-color: var(--bg-cards-craftsvilla);
 }
 
@@ -467,8 +469,8 @@ button:hover {
 
     /* Velger alle klasser som starter med "cards-" */
     [class^="cards-"] {
-        width: calc(50% - 10px); /* To kolonner med mellomrom */
-        min-width: 200px;
+        width: 28%;
+        min-width: 300px;
         box-sizing: border-box; /* Hindrer at padding øker bredden */
     }
 
