@@ -571,6 +571,11 @@ button:hover {
     header{
         position: static;
     }
+    /* galleri page har body class galleri page */
+    .galleri-page .section-presentasjon {
+        display: none;
+    }
+
     .hero-image {
         height:300px;
     }
