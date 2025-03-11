@@ -134,9 +134,26 @@ ul li a:hover {
 }
 
 .logo {
+    background-color: #A4031F;
+    padding:0.4rem 1rem;
+    border:1px solid #ffcc00;
+}
+.logo h1 {
     font-size:1.5rem;
+    color:#ffcc00;
+    margin:0;
+    padding:0;
+}
+.logo p {
+    font-size: 0.8rem;
+    color:whitesmoke;
+    padding:0;
+    margin:0;
+    text-transform: uppercase;
     color:whitesmoke;
 }
+
+
 .h2-kreativ-utvikling {
 font-size: 2.5rem;
 font-weight: 700;
@@ -504,9 +521,7 @@ button:hover {
 
 @media (max-width:767px) {
 
-    header{
-        position: static;
-    }
+  
 
     nav {
         display: flex;
