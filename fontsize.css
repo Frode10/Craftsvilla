@@ -2,7 +2,7 @@
 /* 2.986rem */
 h1 {
     font-size: clamp(1.5rem, 25vw, 2.5rem);
-    color:#f0a417;
+    color:#F3B61F;
 }
 
 /* 2.488rem */
@@ -25,7 +25,7 @@ h3 {
 h4 {
     font-size: 1.4rem;
     padding:4rem 4rem 4rem 4rem;
-    color:#f0a417;
+    color:#F3B61F;
     text-align: center;
     line-height: 1.6;
     font-weight: 400;
