@@ -584,6 +584,10 @@ button:hover {
     .galleri-page .slogan-hero-image {
         display: none;
     }
+    /* vise pamelding skjema på pamelding page */
+    .pamelding-page #signupForm {
+        display:block;
+    }
 
     .hero-image {
         height:300px;
