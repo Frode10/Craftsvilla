@@ -468,6 +468,7 @@ button:hover {
     header {
         display: flex;
         flex-direction: column;
+        
     }
 
 }
@@ -547,6 +548,10 @@ button:hover {
 }
 
 @media (max-width:500px) {
+
+    header{
+        position: none;
+    }
     .hero-image {
         height:300px;
     }
