@@ -572,7 +572,7 @@ button:hover {
         position: static;
     }
     /* galleri page har body class galleri page */
-    .galleri-page .section-presentasjon {
+    .galleri-page .slogan-hero-image {
         display: none;
     }
 
