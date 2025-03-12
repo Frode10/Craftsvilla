@@ -136,25 +136,50 @@
     </section>
 
     <section class="tilbakemelding-skjema">
-    <!-- LAG TILBAKEMELDING -->
 
-    <form id="tilbakemeldingsskjema" action="submit.php" method="POST">
-        <label for="kurs">Deltatt på kurs:</label>
-        <select id="kurs" name="kurs">
-            <option value="akrylmaling">Akrylmaling</option>
-            <option value="lerretsmaling">Lerretsmaling</option>
-            <option value="mosaikk">Mosaikk</option>
-        </select>
 
-        <label for="navn">Ditt navn:</label>
-        <input type="text" id="navn" name="navn" required>
 
-        <label for="tilbakemelding">Din tilbakemelding:</label>
-        <textarea id="tilbakemelding" name="tilbakemelding" rows="4" required></textarea>
-
-        <button type="submit">Send tilbakemelding</button>
-    </form>
-</section>
+          <!-- LAG TILBAKEMELDING -->
+          <div>
+            <form id="tilbakemeldingsskjema" action="submit.php" method="POST">
+                <label for="kurs">Deltatt på kurs:</label>
+                <select id="kurs" name="kurs">
+                    <option value="akrylmaling">Akrylmaling</option>
+                    <option value="lerretsmaling">Lerretsmaling</option>
+                    <option value="mosaikk">Mosaikk</option>
+                </select>
+    
+                <label for="navn">Ditt navn:</label>
+                <input type="text" id="navn" name="navn" required>
+    
+                <label for="tilbakemelding">Din tilbakemelding:</label>
+                <textarea id="tilbakemelding" name="tilbakemelding" rows="4" required></textarea>
+    
+                <button type="submit">Send tilbakemelding</button>
+            </form>
+        </div>
+        <!-- DENNE DIV ER SKJULT FRA 992PX OG OPP
+            SE MEDIA MAX-WIDTH 992px -->
+    
+        <div class="cards-5">
+            <div class="image-wrapper">
+                <img src="./images-kurstilbud/lightbulb.jpg">
+            </div>
+            <div class="cards-text-wrapper">
+                <h3>Modernisme eller figurativt?</h3>
+                <p>Visste du at Odd Nerdrum, kjent for sin figurative stil, bruker barokkens teknikker som
+                    chiaroscuro? Han har kalt kunsten sin "kitsch" for å utfordre moderne kunstnormer.</p>
+                
+                <div style="display:flex; gap:1rem">
+                    <button>Modernisme</button>
+                    <button>Figurativt</button>
+                </div>
+            </div>
+        </div> <!-- Lagt til avsluttende div for cards-5 -->
+    
+      
+    </section>
+    
 
  <!-- START galleri -->
  <div class="hvorfor-kurs">
