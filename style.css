@@ -296,7 +296,7 @@ section, footer {
 .cards-craftsvilla, 
 .cards-argumenter, 
 .cards-kurstilbud {
-    width: calc(33.33% - 0.5rem); /* Account for the gap */
+    width: calc(33.33% - 0.5rem);
 }
 
 /* SECTIONS */
