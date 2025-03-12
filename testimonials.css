@@ -1,0 +1,128 @@
+
+
+
+section.testimonials {
+
+    background-color: #264e60;
+    padding-bottom: 5rem;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem; 
+    width: 100%;
+}
+
+.card-testimonials {
+    background-color: lightgray;
+    padding: 2rem;
+    border-radius: 8px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* BOLD TEKST CLASS */
+.p-bold {
+    font-weight: 600;
+}
+
+/* Font-size class */
+.p-10 {
+    font-size: 1rem;
+   
+}
+
+/* Styling tilbakemeldingsskjma */
+
+section.tilbakemelding-skjema {
+    padding-top:5rem;
+    padding-bottom:5rem;
+background-color: var(--bg-heading-section);
+}
+
+#tilbakemeldingsskjema {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #8bc3ffc2;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: auto;
+}
+
+#tilbakemeldingsskjema label {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+}
+
+#tilbakemeldingsskjema input, 
+#tilbakemeldingsskjema select, 
+#tilbakemeldingsskjema textarea {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.3s ease-in-out;
+    width: 100%;
+}
+
+#tilbakemeldingsskjema input:focus, 
+#tilbakemeldingsskjema select:focus, 
+#tilbakemeldingsskjema textarea:focus {
+    border: 1px solid #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+#tilbakemeldingsskjema textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#tilbakemeldingsskjema button {
+    background: #66a500;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    padding: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+#tilbakemeldingsskjema button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+#tilbakemeldingsskjema button:active {
+    transform: translateY(1px);
+}
+
+
+
+/* SE HER HVORDAN DISSE ER BRUKT.. */
+/* 
+<!-- START TESTIMONIALS har eget css skjema -->
+<h2>Tilbakemelidng kursdeltagere</h2>
+
+<section class="testimonials">
+    <div class="grid">
+        <div class="card-testimonial">
+            <p class="p-10 p-bold">Heading</p>
+            <p class="p-10">Her er testimonal</p>
+
+            <img src="">
+            <p class="p-10">Per hansen</p>
+        </div>
+
+
+    </div> */

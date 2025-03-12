@@ -30,8 +30,11 @@
 --bg-cards-argumenter: transparent; 
 --bg-cards-kurstilbud: transparent; 
 --bg-cards-footer: #dabdb0; 
+}
 
-
+/* COLORS */
+.dark-blue {
+    background-color: #172c36;
 }
 
 html{
@@ -90,7 +93,7 @@ nav {
 }
 
 ul li a:hover {
-    color: #ffcc00; /* Valgfri hover-effekt */
+    color: #343434; /* Valgfri hover-effekt */
 }
 
 .meny-liste li:nth-child(1) {
@@ -107,13 +110,13 @@ ul li a:hover {
 }
 .meny-liste li:nth-child(3) {
     padding:0.5rem 1rem;
-    background-color: #19a111;
+    background-color: #dabdb0;
     border-radius: 4px;
     border:0px solid #172c36;
 }
 .meny-liste li:nth-child(4) {
     padding:0.5rem 1rem;
-    background-color: #dabdb0;
+    background-color: #19a111;
     border-radius: 4px;
     border:0px solid #172c36;
 }
@@ -158,7 +161,7 @@ ul li a:hover {
     color:whitesmoke;
 }
 
-
+/* Section header tekst. */
 .h2-kreativ-utvikling {
 font-size: 2.5rem;
 font-weight: 700;
@@ -321,20 +324,15 @@ section, footer {
     
     padding-top: 5rem;
     padding-bottom: 5rem;
+    border-bottom: 3rem solid #f0a417;
 }
-
-.cards-footer {
-    
-}
-
-
 
 .h4-hvorfor-kurs {
     display: flex;
     justify-content: center;
     align-items: center;
     width:100%;
-    background-color: var(--bg-heading-section);    
+    background-color:#2098cd;    
    
 }
 
@@ -663,9 +661,7 @@ button:hover {
     .cards-4 {
         display:none;
     }
-
     #signupForm {
         display:none;
     }
-
 }

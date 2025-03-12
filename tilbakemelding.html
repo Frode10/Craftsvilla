@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontsize.css">
+    <link rel="stylesheet" href="testimonials.css">
     <script src="./script.js" defer></script>
 
     <title>Craftsvilla</title>
@@ -83,10 +84,83 @@
 
         </section> -->
 
-        <!-- START galleri -->
-        <div class="hvorfor-kurs">
-            <h2 class="kurstilbud-h2">Galleri - tidligere kursdeltakere</h2>
+       
+
+        <!-- START TESTIMONIALS har eget css skjema -->
+
+    <div class="kurstilbud-h2">
+        <h2>Tilbakemelding fra kursdeltagere</h2>
+    </div>
+    
+
+    <section class="testimonials">
+        <div class="grid">
+            <div class="card-testimonials">
+                <p class="p-10">Kurs: Lerretsmaling</p>
+                <p class="p-10 p-bold">"Kurset var utrolig inspirerende! Jeg lærte nye teknikker og fikk utforske min egen stil. Anbefales til alle som vil utvikle seg kreativt!"</p>
+
+                <img src="">
+                <p class="p-10">Maria Lund</p>
+            </div>
+
+            <div class="card-testimonials">
+                <p class="p-10">Kurs: Lerretsmaling</p>
+                <p class="p-10 p-bold">"Elsket hvordan kurset kombinerte teori og praksis. Føler meg mye tryggere på å eksperimentere med farger og former nå."</p>
+
+                <img src="">
+                <p class="p-10">Camilla Johansen</p>
+            </div>
+
+            <div class="card-testimonials">
+                <p class="p-10">Kurs: Akrylmaling</p>
+                <p class="p-10 p-bold">"Veldig gøy å lære sammen med andre kreative sjeler. Kurset ga meg både selvtillit og verktøy til å skape mer kunst!"</p>
+
+                <img src="">
+                <p class="p-10">Erik Solberg</p>
+            </div>
+
+            <div class="card-testimonials">
+                <p class="p-10">Kurs: Mosaikk</p>
+                <p class="p-10 p-bold">"Veldig gøy å lære sammen med andre kreative sjeler. Kurset ga meg både selvtillit og verktøy til å skape mer kunst!"</p>
+
+                <img src="">
+                <p class="p-10">Erik Solberg</p>
+            </div>
+
+
         </div>
+
+        
+
+
+    </section>
+
+    <section class="tilbakemelding-skjema">
+    <!-- LAG TILBAKEMELDING -->
+
+    <form id="tilbakemeldingsskjema" action="submit.php" method="POST">
+        <label for="kurs">Deltatt på kurs:</label>
+        <select id="kurs" name="kurs">
+            <option value="akrylmaling">Akrylmaling</option>
+            <option value="lerretsmaling">Lerretsmaling</option>
+            <option value="mosaikk">Mosaikk</option>
+        </select>
+
+        <label for="navn">Ditt navn:</label>
+        <input type="text" id="navn" name="navn" required>
+
+        <label for="tilbakemelding">Din tilbakemelding:</label>
+        <textarea id="tilbakemelding" name="tilbakemelding" rows="4" required></textarea>
+
+        <button type="submit">Send tilbakemelding</button>
+    </form>
+</section>
+
+ <!-- START galleri -->
+ <div class="hvorfor-kurs">
+    <h2 class="kurstilbud-h2">Galleri - tidligere kursdeltagere</h2>
+</div>
+        <!-- Tidligere deltagere -->
 
         <section class="section-kurstilbud">
 
