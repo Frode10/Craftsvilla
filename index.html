@@ -9,8 +9,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=palette" />
+   
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontsize.css">
     <script src="./script.js" defer></script>
@@ -26,7 +28,7 @@
     </div>
         <nav>
             <ul class="meny-liste">
-                <li><a href="/">Hjem</a></li>
+                <li><a href="/"><span class="material-symbols-outlined">home</span></a></li>
                 <li><a href="#">Tilbakemelding</a></li>
                 <li><a href="galleri.html">Galleri</a></li>
                 <li><a href="pamelding.html">Påmelding</a></li>
@@ -196,19 +198,23 @@
         <section class="section-kurstilbud">
             <div class="cards-kurstilbud">
                 <div class="image-wrapper"><img src="./images/mosaic.jpg"></div>
-                <div class="cards-text-wrapper
-">
+                <div class="cards-text-wrapper">
 
-                    <h3>Mosaikk Kunst</h3>
-                    <p><strong>450 pr deltaker + kr 100 pr barn</strong></p>
+                  
+
+                    <h3><span class="material-symbols-outlined">
+                            auto_awesome_mosaic
+                            </span>Mosaikk Kunst</h3>
+                    
+                            <p><strong>450 pr deltaker + kr 100 pr barn</strong></p>
                     <p>Utforsk den tidløse kunsten av mosaikk! Dette kurset gir deg muligheten til å skape vakre mønstre
                         ved hjelp av små, fargede steiner.</p>
 
 
-                    <p class="kurs-info">Sett inkluderer: Ramme, A4 størrelse treplate, små fargede steiner, gummi.</p>
-                    <p class="kurs-info">Avholdes Mandag og Torsdag - Kl 1700-2100</p>
-                    <p class="kurs-info">Vipps nr 99887788 eller kontant ved oppmøte</p>
-                    <p class="kurs-info">Vi tilbyr sesongkort så du kan til enhver tid møte på det kurset du ønsker.</p>
+                    <div class="icon-wrapper"><span class="material-symbols-outlined icon-check-symbol">task_alt</span><p class="kurs-info">Sett inkluderer: Ramme, A4 størrelse treplate, små fargede steiner, gummi.</p></div>
+                    <div class="icon-wrapper"><span class="material-symbols-outlined icon-info-symbol">info</span><p class="kurs-info">Avholdes Mandag og Torsdag - Kl 1700-2100</p></div>
+                    <div class="icon-wrapper"><span class="material-symbols-outlined icon-info-symbol">info</span><p class="kurs-info">Vipps nr 99887788 eller kontant ved oppmøte</p></div>
+                    <div class="icon-wrapper"><span class="material-symbols-outlined icon-info-symbol">info</span><p class="kurs-info">Vi tilbyr sesongkort så du kan til enhver tid møte på det kurset du ønsker.</p></div>
 
                     <button>Påmelding</button>
                 </div>
@@ -217,27 +223,18 @@
             <div class="cards-kurstilbud">
                 <div class="image-wrapper"><img src="./images/acryl3.jpg"></div>
                 <div class="cards-text-wrapper">
-                    <span class="material-symbols-outlined">
+
+                    <h3> <span class="material-symbols-outlined">
                         palette
-                    </span>
-                    <style>
-                        .material-symbols-outlined {
-                            font-variation-settings:
-                                'FILL' 0,
-                                'wght' 400,
-                                'GRAD' 0,
-                                'opsz' 24
-                        }
-                    </style>
-                    <h3>Akvarellmaling</h3>
+                    </span>Akvarellmaling</h3>
+
                     <p><strong>450 pr deltaker + kr 100 pr barn</strong></p>
                     <p>Fordyp deg i akvarellmaling og lær grunnleggende teknikker for å skape livlige og uttrykksfulle
                         kunstverk.</p>
-                    <p class="kurs-info">Sett inkluderer: Ramme, akvarellpapir med designmal, akvarellfarger, pensler.
-                    </p>
-                    <p class="kurs-info">Avholdes Tirsdag og Fredag - Kl 1700-2100</p>
-                    <p class="kurs-info">Vipps nr 99887788 eller kontant ved oppmøte</p>
-                    <p class="kurs-info">Vi tilbyr sesongkort så du kan til enhver tid møte på det kurset du ønsker.</p>
+                <div class="icon-wrapper"><span class="material-symbols-outlined icon-check-symbol">task_alt</span><p class="kurs-info">Sett inkluderer: Ramme, akvarellpapir med designmal, akvarellfarger, pensler.</p></div>
+                <div class="icon-wrapper"><span class="material-symbols-outlined icon-info-symbol">info</span><p class="kurs-info">Avholdes Tirsdag og Fredag - Kl 1700-2100</p></div>
+                    <div class="icon-wrapper"><span class="material-symbols-outlined icon-info-symbol">info</span><p class="kurs-info">Vipps nr 99887788 eller kontant ved oppmøte</p></div>
+                    <div class="icon-wrapper"><span class="material-symbols-outlined icon-info-symbol">info</span><p class="kurs-info">Vi tilbyr sesongkort så du kan til enhver tid møte på det kurset du ønsker.</p></div>
 
 
                     <button>Påmelding</button>
@@ -246,31 +243,18 @@
 
             <div class="cards-kurstilbud">
                 <div class="image-wrapper"><img src="./images/lerret-modern-expressionism.jpg"></div>
-                <div class="cards-text-wrapper
-">
+                <div class="cards-text-wrapper">
 
-                    <span class="material-symbols-outlined">
+                    <h3><span class="material-symbols-outlined">
                         wall_art
-                    </span>
+                    </span>Lerretsmaling</h3>
 
-                    <style>
-                        .material-symbols-outlined {
-                            font-variation-settings:
-                                'FILL' 0,
-                                'wght' 400,
-                                'GRAD' 0,
-                                'opsz' 24
-                        }
-                    </style>
-
-                    <h3>Lerretsmaling</h3>
                     <p><strong>500 pr deltager + kr 100 pr barn</strong></p>
-                    <p>Oppdag gleden ved akrylmaling på lerret. Dette kurset lar deg utforske farger, former og kreativt
-                        uttrykk.</p>
-                    <p class="kurs-info">Sett inkluderer: Ramme, akrylpapir med designmal, akrylfarger, pensler.</p>
-                    <p class="kurs-info">Avholdes Onsdag og Lørdag - Kl 1700-2100</p>
-                    <p class="kurs-info">Vipps nr 99887788 eller kontant ved oppmøte</p>
-                    <p class="kurs-info">Vi tilbyr sesongkort så du kan til enhver tid møte på det kurset du ønsker.</p>
+                    <p>Oppdag gleden ved akrylmaling på lerret. Dette kurset lar deg utforske farger, former og kreativt uttrykk.</p>
+                    <div class="icon-wrapper"><span class="material-symbols-outlined icon-check-symbol">task_alt</span><p class="kurs-info">Sett inkluderer: Ramme, akrylpapir med designmal, akrylfarger, pensler.</p></div>
+                    <div class="icon-wrapper"><span class="material-symbols-outlined icon-info-symbol">info</span><p class="kurs-info">Avholdes Onsdag og Lørdag - Kl 1700-2100</p></div>
+                    <div class="icon-wrapper"><span class="material-symbols-outlined icon-info-symbol">info</span><p class="kurs-info">Vipps nr 99887788 eller kontant ved oppmøte</p></div>
+                    <div class="icon-wrapper"><span class="material-symbols-outlined icon-info-symbol">info</span><p class="kurs-info">Vi tilbyr sesongkort så du kan til enhver tid møte på det kurset du ønsker.</p></div>
 
                     <button>Påmelding</button>
                 </div>

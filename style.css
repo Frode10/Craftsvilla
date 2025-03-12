@@ -396,7 +396,7 @@ section, footer {
     background-color: var(--bg-cards-kurstilbud) ;
 }
 /* verktøy, kurstider, sesongkort osv... i kursbox info */
-.kurs-info {
+/* .kurs-info {
     padding:1rem;
     border-radius: 4px;
     background-color: #F2C14E;
@@ -405,7 +405,7 @@ section, footer {
     letter-spacing: 0px;
     text-align: center;
     font-size: 1rem;
-}
+} */
 
 .cards-footer {
    
@@ -488,6 +488,24 @@ button:hover {
 
 }
 
+/* icons styling */
+
+.icon-wrapper {
+    display:flex;
+
+}
+.icon-check-symbol {
+    color:#63C132;
+    font-size:30px;
+    margin-right: 8px;
+    
+}
+.icon-info-symbol {
+    color:#f0a417;
+    font-size:30px;
+    margin-right: 8px;
+    
+}
 /*  --------------- MEDIA QUERIES -------------  */
 
 @media (max-width:1245px) {
