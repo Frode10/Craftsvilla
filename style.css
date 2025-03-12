@@ -17,7 +17,7 @@
 --bg-section-presentasjon: #1d4355; /* #1d4355 */
 --bg-section-argumenter: #2098cd; 
 --bg-section-kurstilbud: #F3B61F; 
---bg-section-footer: #2098cd; 
+--bg-section-footer: #1d4355; 
 
 /* BUTTONS */
 --bg-button: #63C132; /* Dyp sjøgrønn – fremhever handlingselementer */
@@ -316,7 +316,15 @@ section, footer {
 }
 
 .section-footer {
+    display: flex;
     background-color: var(--bg-section-footer);
+    
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.cards-footer {
+    
 }
 
 
