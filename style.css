@@ -73,6 +73,7 @@ nav {
 /* MENY liste */
 .meny-liste {
     display: flex;
+    align-items: center;
     gap: 0.5rem;
     font-size: 1rem;
     list-style-type: none; /* Fjern punktmerkene */
@@ -490,9 +491,19 @@ button:hover {
 
 /* icons styling */
 
+.material-symbols-outlined {
+   
+   
+  
+}
+
+.home-icon {
+    display: flex;
+    align-items: center;
+}
+
 .icon-wrapper {
     display:flex;
-
 }
 .icon-check-symbol {
     color:#63C132;
