@@ -10,10 +10,10 @@
 --bg-header:#1d4355; /* #1d4355 */
 
 /* BG COLOR BODY #172c36 */
---bg-body:  #172c36; 
+--bg-body:#1d4355; 
 
 /* HEADINGS OG SEKSJONER */
---bg-heading-section:  #264e60;  /* h2 #264e60 */
+--bg-heading-section:    #1d4355;  /* h2 #264e60 */
 --bg-section-presentasjon: #1d4355; /* #1d4355 */
 --bg-section-argumenter: #2098cd; 
 --bg-section-kurstilbud: #F3B61F; 
@@ -289,6 +289,7 @@ section, footer {
     gap: 0.5rem;
     padding: 1rem;
    justify-content: space-between;
+   border-radius: 8px;
 
 }
 
