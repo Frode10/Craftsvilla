@@ -188,7 +188,7 @@ form {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.212);
     padding: 1rem;
@@ -346,6 +346,7 @@ section, footer {
     color:#f0a417;
     background-color: var(--bg-heading-section);
     padding-left:2rem;
+    text-align: center;
 }
 
 /* CARDS */
